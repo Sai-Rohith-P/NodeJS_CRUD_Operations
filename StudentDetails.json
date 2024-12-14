@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Rohith",
+        "age": 20,
+        "from": "Vizag",
+        "course": "fsd",
+        "Goal": "Web Developer"
+    },
+    {
+        "id": 2,
+        "name": "Sai",
+        "age": 22,
+        "from": "USA",
+        "course": "UI",
+        "Goal": "Designer"
+    },
+    {
+        "id": 3,
+        "name": "Anjali",
+        "age": 20,
+        "from": "Bangalore",
+        "course": "fsd",
+        "Goal": "Web Developer"
+    },
+    {
+        "id": 4,
+        "name": "Lokesh",
+        "age": 21,
+        "from": "Vizag",
+        "course": "aiml",
+        "Goal": "ml Engineer"
+    },
+    {
+        "id": 5,
+        "name": "Kusuma",
+        "age": 20,
+        "from": "Hyderabad",
+        "course": "fsd",
+        "Goal": "Web Developer"
+    },
+    {
+        "id": 6,
+        "name": "tarun",
+        "age": 18,
+        "from": "Vijayawada",
+        "course": "arts",
+        "Goal": "artist"
+    },
+    {
+        "id": 7,
+        "name": "Anil",
+        "age": 20,
+        "from": "Vizag",
+        "course": "fsd",
+        "Goal": "Developer"
+    },
+    {
+        "name": "Sasi",
+        "age": 22,
+        "from": "gujarat",
+        "course": "dsml",
+        "Goal": "data Analyst",
+        "id": 8
+    },
+    {
+        "name": "Arjun",
+        "age": 46,
+        "from": "Kerala",
+        "course": "ai",
+        "Goal": "AI",
+        "id": 9
+    }
+]
