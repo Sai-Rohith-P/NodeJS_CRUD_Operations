@@ -4,7 +4,7 @@ const fs = require('fs');
 const app = express();
 // const port = process.env.PORT;
 // let port = 3000;
-let port = process.env.PORT;
+let port = process.env.PORT || 3000;
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
@@ -25,7 +25,7 @@ app.post('/newstudent', (req, res) => {
     let newstudent = req.body;
     StudentDetails.push({ ...newstudent, id: StudentDetails.length + 1 });
     fs.writeFile('./StudentDetails.json', JSON.stringify(StudentDetails), (err, data) => {
-        res.send({ status: "sucesss", id: StudentDetails.length })
+        console.log(({ status: "sucesss", id: StudentDetails.length }))
     })
     console.log(newstudent);
     res.send("New data Added.");
@@ -63,18 +63,19 @@ app.patch('/update/:id', (req, res) => {
 
 app.delete('/deleteStudent/:id', (req, res) => {
     let id = parseInt(req.params.id);
+
     if (id < StudentDetails.length) {
         const user = StudentDetails.find((user) => user.id === id);
-        if (user === true) {
+        if (user) {
             delete StudentDetails[id - 1];
             fs.writeFile('./StudentDetails.json', JSON.stringify(StudentDetails), (error, data) => {
                 res.send("Deleted SucessFully...");
             })
         } else {
-            res.send("Sorry there is No user RegardingAbove give ID.");
+            res.send("Sorry ");
         }
     } else {
-        res.send("Sorry there is No user RegardingAbove give ID.")
+        res.send("Sorry there is No user Regarding Above give ID.")
     }
 
 })

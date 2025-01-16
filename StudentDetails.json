@@ -63,12 +63,13 @@
         "Goal": "data Analyst",
         "id": 8
     },
+    null,
     {
-        "name": "Arjun",
-        "age": 46,
-        "from": "Kerala",
-        "course": "ai",
-        "Goal": "AI",
-        "id": 9
+        "name": "Mam",
+        "age": 26,
+        "from": "TN",
+        "course": "DSML",
+        "Goal": "Data",
+        "id": 10
     }
 ]
