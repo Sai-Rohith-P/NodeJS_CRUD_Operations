@@ -56,20 +56,19 @@
         "Goal": "Developer"
     },
     {
-        "name": "Sasi",
-        "age": 22,
-        "from": "gujarat",
-        "course": "dsml",
-        "Goal": "data Analyst",
+        "name": "Anil Kumar",
+        "age": 20,
+        "from": "vijayanagaram",
+        "course": "fsd",
+        "Goal": "Developer",
         "id": 8
     },
-    null,
     {
-        "name": "Mam",
-        "age": 26,
-        "from": "TN",
+        "name": "tarunnnn",
+        "age": 22,
+        "from": "AKp",
         "course": "DSML",
-        "Goal": "Data",
-        "id": 10
+        "Goal": "Developer",
+        "id": 9
     }
 ]

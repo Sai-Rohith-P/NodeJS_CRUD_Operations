@@ -64,8 +64,8 @@ app.patch('/update/:id', (req, res) => {
 app.delete('/deleteStudent/:id', (req, res) => {
     let id = parseInt(req.params.id);
 
-    if (id < StudentDetails.length) {
-        const user = StudentDetails.find((user) => user.id === id);
+    if (id >= 0) {
+        const user = StudentDetails.findIndex((user) => user.id === id);
         if (user) {
             delete StudentDetails[id - 1];
             fs.writeFile('./StudentDetails.json', JSON.stringify(StudentDetails), (error, data) => {
